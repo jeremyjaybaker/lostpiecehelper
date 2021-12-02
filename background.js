@@ -1,0 +1,7 @@
+// background.js
+
+let apiKey = '';
+
+chrome.runtime.onInstalled.addListener(() => {
+  chrome.storage.sync.set({ apiKey });
+});
